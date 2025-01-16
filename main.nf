@@ -24,7 +24,7 @@ workflow {
 
     if (params.workflow_opt == 'shortread_') {
 
-        SHORT_READ_METAGENOMIC(ch_fastq, ch_hostgen)
+        ATD(ch_fastq, ch_hostgen)
 
         }
 
