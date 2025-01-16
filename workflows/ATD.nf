@@ -9,7 +9,7 @@ include { HOST_REMOVAL_SHORT_READ as HOST_REMOVAL_SHORT_READ } from '../subworkf
 include { ASSEMBLY as ASSEMBLY } from '../subworkflows/ASSEMBLY.nf'
 
 
-workflow atd {
+workflow ATD {
     take:
         fastqs_short_raw      //    channel: [val(sample), [fastq_1, fastq_2]]
         host_gen_fasta        //    channel: channel: [val(sample), fasta]
