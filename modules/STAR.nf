@@ -1,6 +1,6 @@
 process STAR {
     label 'midmem'
-    container 'mgibio/star'
+    container 'quay.io/biocontainers/star:2.7.11b--h5ca1c30_5'
 
     input:
         tuple val(sample), file(fq1), file(fq2), file(ref)
