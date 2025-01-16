@@ -12,6 +12,6 @@ process STAR {
     """
     mkdir ${sample}_index
     STAR --runThreadN ${task.cpus} --runMode genomeGenerate --genomeDir ${sample}_index --genomeFastaFiles ${ref} --sjdbOverhang ${params.read_len}
-    STAR --runThreadN ${task.cpus} --genomeDir ${sample}_index --readFilesIn ${fq1} ${fq2}
+    STAR --runThreadN ${task.cpus} --genomeDir ${sample}_index --readFilesCommand zcat --readFilesIn ${fq1} ${fq2}
     """
 }
