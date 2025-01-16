@@ -22,7 +22,7 @@ include { SR_MULTIQC as SR_MULTIQC } from './workflows/SR_MULTIQC.nf'
 workflow {
 
 
-    if (params.workflow_opt == 'shortread_') {
+    if (params.workflow_opt == 'shortread') {
 
         ATD(ch_fastq, ch_hostgen)
 
