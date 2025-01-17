@@ -12,6 +12,6 @@ process TRINITY {
 
     """
     mkdir trinity_${sample}
-    Trinity --seqType fq --max_memory ${task.memory.toGiga()} --left ${concat_norm_1_fq}  --right ${concat_norm_2_fq} --CPU ${task.cpus} --output ./trinity_${sample}
+    Trinity --seqType fq --max_memory ${task.memory.toGiga()}G --left ${concat_norm_1_fq}  --right ${concat_norm_2_fq} --CPU ${task.cpus} --output ./trinity_${sample}
     """
 }
