@@ -1,5 +1,5 @@
 process TRINITY {
-    label 'midmen'
+    label 'midmemlong'
 	container 'trinityrnaseq/trinityrnaseq'
 
     input:
