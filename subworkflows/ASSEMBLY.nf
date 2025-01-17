@@ -20,6 +20,6 @@ workflow ASSEMBLY {
         TRINITY(fastqs)
 
     emit:
-        assembly    =  TRINITY.out.assembly  //   channel: [ val(sample), fastq_1, fastq_2]
+        assembly    =  TRINITY.out.assembly  //   channel: [ val(sample), fasta]
 
 }
