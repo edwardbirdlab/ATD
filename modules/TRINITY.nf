@@ -5,7 +5,7 @@ process TRINITY {
     input:
         tuple val(sample), file(concat_norm_1_fq), file(concat_norm_2_fq)
     output:
-	    tuple val(sample), path("trinity_${sample}/Trinity.fasta"), emit: assembly
+	    tuple val(sample), path("${sample}.Trinity.fasta"), emit: assembly
 
 
     script:
