@@ -19,16 +19,16 @@ module_order:
 # QC for short Read Metagenomic
 - fastqc:
     name: FastQC (Raw_Reads)
-    path_filters: SHORT_READ_METAGENOMIC/READ_QC_SR/RAW_FASTQC/*_fastqc.zip
+    path_filters: ATD/READ_QC_SR/RAW_FASTQC/*_fastqc.zip
 - fastp:
     name: FastP
-    path_filters: SHORT_READ_METAGENOMIC/READ_QC_SR/FASTP/*.json
+    path_filters: ATD/READ_QC_SR/FASTP/*.json
 - samtools:
     name: samtools (Human_Removal)
-    path_filters: SHORT_READ_METAGENOMIC/HUMAN_REMOVAL_SHORT_READ/SAMTOOLS_STATS/*txt
+    path_filters: ATD/HUMAN_REMOVAL_SHORT_READ/SAMTOOLS_STATS/*txt
 - samtools:
     name: samtools (Host_Removal)
-    path_filters: SHORT_READ_METAGENOMIC/HOST_REMOVAL_SHORT_READ/SAMTOOLS_STATS/*txt
+    path_filters: ATD/HOST_REMOVAL_SHORT_READ/SAMTOOLS_STATS/*txt
 - fastqc:
     name: FastQC (Final QC Reads)
-    path_filters: SHORT_READ_METAGENOMIC/HOST_REMOVAL_SHORT_READ/FASTQC_HOST_DEP/*_fastqc.zip
+    path_filters: ATD/HOST_REMOVAL_SHORT_READ/FASTQC_HOST_DEP/*_fastqc.zip
